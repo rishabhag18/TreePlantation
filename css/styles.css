@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.banner {
+    background: url('../images/banner.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.banner p {
+    font-size: 1.5rem;
+}
+
+.card img {
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-body h5 {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+    .banner h1 {
+        font-size: 2rem;
+    }
+
+    .banner p {
+        font-size: 1rem;
+    }
+
+    .card-body h5 {
+        font-size: 1rem;
+    }
+}
