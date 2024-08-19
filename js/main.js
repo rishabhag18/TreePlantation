@@ -1,5 +1,21 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // JavaScript to handle tree selection, etc.
-    // You can expand this based on your needs
-    console.log("Tree Plantation Service is ready!");
+// main.js
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Example: Adding a product to the cart
+    const addToCartButtons = document.querySelectorAll('.btn-success');
+    addToCartButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            alert('Item added to cart!');
+        });
+    });
+
+    // Form validation example
+    const checkoutForm = document.querySelector('form');
+    checkoutForm.addEventListener('submit', function (event) {
+        if (!checkoutForm.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+        }
+        checkoutForm.classList.add('was-validated');
+    });
 });
